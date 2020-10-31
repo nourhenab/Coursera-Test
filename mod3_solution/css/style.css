@@ -1,0 +1,138 @@
+body{
+	font-size: 16px;
+	color: #ffffff;
+	background-color: #f2f2f2;
+	font-family: 'Oxygen', sans-serif;
+}
+@media (max-width: 992px){
+	.mobileMenu{
+		position: fixed;
+		top:0;
+		bottom: 0;
+		left:0;
+		margin:auto;
+		transform: translateX(-100%);
+		transition: all ease 0.25s;
+		&.open{
+			transform: translateX(0);
+
+		}
+	}
+}
+
+#menu-tile:hover , #specials-tile:hover , #map-tile:hover {
+ box-shadow: 0 5px 5px 5px grey;
+}
+
+#menu-tile{
+	background: url('../images/menu.jpg') no-repeat;
+	background-position: center;
+}
+#specials-tile{
+	background: url('../images/specials.jpg') no-repeat;
+	background-position: center;
+}
+
+.container1{
+	height: 100px;
+}
+#logo-img {
+  background: url('../images/logo-image.png') no-repeat;
+  width: 150px;
+  height: 100px;
+  margin-right: 10px;
+}
+
+@media (min-width: 1200px){
+	.container .jumbotron {
+		background: url('../images/restaurant.jpg') no-repeat;
+		height: 720px;
+		width: 1080px;
+
+		margin-top: 50px;
+
+
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+	.container .jumbotron {
+		background: url('../images/restaurant.jpg') no-repeat;
+		box-sizing: border-box;
+		height: 550px;
+		margin-top: 50px;
+
+	}
+}
+
+@media (min-width: 766px) and (max-width: 991px){
+	.container .jumbotron {
+		background: url('../images/restaurant.jpg') no-repeat;
+		box-sizing: border-box;
+		height: 430px;
+
+	}
+}
+
+@media(max-width: 767px)
+{
+	.container .jumbotron{
+		margin-top: 30px;
+		padding:0;	}
+
+#menu-tile, #specials-tile{
+	width: 350px;
+	margin: 0 auto 15px;}
+
+}
+
+#menu-tile, #specials-tile, #map-tile{
+
+height: 250px;
+width: 100%;
+margin-bottom: 15px;
+position: relative;
+border:2px solid grey;
+overflow : hidden; 
+
+}
+
+
+#menu-tile span, #specials-tile span, #map-tile span{
+	position: absolute;
+	bottom:0;
+	right:0;
+	width:100%;
+	text-align: center;
+	font-size: 1.6em;
+	text-transform: uppercase;
+	background-color: #000;
+	color:#fff; /*text color*/
+	opacity:0.8; /*transparency*/
+}
+
+/* footer */
+.panel-footer{
+	background-color: #222;
+	margin-top: 30px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	border-top:0; 
+}
+#mm{
+	padding-top: 30px;
+}
+#comment{
+	color:green;
+}
+
+#hours, #address{
+	line-height: 2;
+}
+#testimonials{
+	font-style: italic;
+}
+#address p{
+	color:green;
+	font-size:0.8em;
+}
